@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+      
+      var peso=parseFloat(prompt("Qual o peso"));
+      var altura=parseFloat(prompt("Qual a altura"));
+
+      document.write(`O peso é ${peso}<br>`);
+      document.write(`A altura é ${altura.toFixed(2)} <br>`);
+      imc=(peso/(altura*altura));
+      
+
+      document.write(`O IMC É ${imc}<br>`);
+
+      if (imc < 18){
+          document.write("Você está Magro");
+      }
+      else if (imc > 18 && imc < 24 ){
+          document.write("Você está Normal ");
+      }
+      else if (imc > 25 && imc < 29 ) {
+             document.write("Você está com Sobrepeso");
+      }
+
+      else if (imc > 30 && imc < 39) {
+          document.write("Você esta com Obesidade")
+      }
+      else if (imc > 40) {
+          document.write("Você esta com Obesidade grave")
+      }
+      
+
+
+               
+                  
+              
+      
+
+       
+
+
+
+    </script>
+</body>
+</html>
